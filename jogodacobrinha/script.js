@@ -9,8 +9,29 @@ ctx.fillStyle = "white"
 const size = 30
 
 const snake = [
-    {x: 200, y:200},
-    {x: 230, y:200},
+    {x: 210, y:180},
+    {x: 240, y:180},
+    {x: 270, y:180},
+    {x: 300, y:180},
+    {x: 330, y:180},
+    {x: 360, y:180},
+    {x: 390, y:180},
+    {x: 420, y:180},
+    {x: 450, y:180},
+    {x: 480, y:180},
+    {x: 510, y:180},
+    {x: 540, y:180},
+    {x: 570, y:180},
+    {x: 600, y:180},
+    {x: 630, y:180},
+    {x: 660, y:180},
+    {x: 690, y:180},
+    {x: 720, y:180},
+    {x: 750, y:180},
+    {x: 780, y:180},
+    {x: 820, y:180},
+    {x: 850, y:180},
+
 ]
 
 //  movimentação
@@ -47,7 +68,7 @@ document.getElementById('botaoIniciar').addEventListener('click', async () => {
     formulario.classList.add("hidden");
 
     const drawSnake = () => {
-        ctx.fillStyle - '#ddd'
+        ctx.fillStyle = '#ddd'
     
         snake.forEach((position, index) =>{
             if (index == snake.length - 1){
@@ -69,7 +90,7 @@ document.getElementById('botaoIniciar').addEventListener('click', async () => {
     
         loopId = setTimeout (() => {
             gameLoop()
-        }, 250)
+        }, 70)
     
     }
         
@@ -90,6 +111,5 @@ document.getElementById('botaoIniciar').addEventListener('click', async () => {
         }
     })
 })
-
 
 
